@@ -1,5 +1,10 @@
 # Audit
 
+> **Retired.** This repository was superseded by
+> [ha-nohassle-amp](https://github.com/EndOfTheLine-HA/ha-nohassle-amp)
+> (domain `nohassle_amp`), which imports an amplifier set up here. The notes below
+> describe the last released version, v0.1.0.
+
 ## Privacy boundary
 
 A private Home Assistant installation was used only to verify compatibility.

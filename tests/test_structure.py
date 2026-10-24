@@ -39,3 +39,9 @@ def test_no_em_dashes_in_user_facing_text():
     files = [ROOT / "README.md", ROOT / "AUDIT.md", PACKAGE / "strings.json"]
     for path in files:
         assert chr(0x2014) not in path.read_text(encoding="utf-8"), path.name
+
+
+def test_brand_icons_are_shipped():
+    """HACS validation needs local brand assets for a custom integration."""
+    for name in ("icon.png", "icon@2x.png"):
+        assert (PACKAGE / "brand" / name).read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"

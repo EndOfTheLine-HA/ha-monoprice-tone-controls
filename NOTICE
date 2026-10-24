@@ -1,0 +1,11 @@
+Monoprice tone controls for Home Assistant
+
+This integration derives from Home Assistant Core's Monoprice integration,
+copyright its respective contributors, under Apache License 2.0.
+Upstream: https://github.com/home-assistant/core/tree/2026.9.4/homeassistant/components/monoprice
+Original manifest codeowners: @etsinko and @OnFreund.
+
+EndOfTheLine-HA added bass, treble and balance entities with cached zone state,
+and a hand-over of HDMI matrix entries to the separate No Hassle AV integration.
+Amplifier entity identifiers and snapshot/restore service names are retained.
+No affiliation with Monoprice, No Hassle AV, or Home Assistant is implied.
